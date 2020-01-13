@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Twitch-Helper - помогает расширить функционал Twitch</title>
+    <script src="fonts/all.min.js" crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <meta name="description" content="Twitch-Helper - поможет узнать на кого подписан пользователь Twitch!">
+    <meta name="keywords"
+        content="Twitch, twitch followers, twitch follow, twitch фоловеры, twitch как узнать на кого подписан, количество подписчиков Twitch, Twitch-Helper, twitch подписчики">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/555.png">
+</head>
+
+<body>
+    <div class="nav">
+        <p class="logo">Twitch-Helper</p>
+        <ul>
+            <li><a href="http://twitch-helper.ru/">Главная</a></li>
+            <li><a target="_blank" href="https://www.donationalerts.com/r/holinghoman">Донат</a></li>
+            <li><a target="_blank" href="https://vk.com/xaromi">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="wrapper-input">
+        <div class="title">
+            <h1 class="title-name">Простой список подписок(follow) пользователя Twitch</h1>
+            <p class="title-text">Хотите увидеть, на кого подписан(follow) пользователь?</p>
+            <p class="title-text-second">Введите ник пользователя с Twitch ниже, чтобы увидеть список подписок(follow)
+                пользователя!</p>
+            <p class="title-text-sss">На данный момент вывод ограничен <span>20</span> подписками.</p>
+            <p class="title-text-ttt">Сервис находиться в бета тестирование! Просим <a target="_blank"
+                    href="https://vk.com/xaromi">сообщать</a> о багах.</p>
+        </div>
+        <div class="wrapper">
+            <input id="input-user-name" type="text" placeholder="Имя пользователя">
+            <button id="seash"><i class="fas"></i></button>
+        </div>
+    </div>
+    <div class="out-wrapper">
+        <div class="wait">
+            <h2 class="wait-title">
+                Ожиданиe ника пользователя Twitch...
+            </h2>
+        </div>
+        <div class="eroorout disabled">
+            <h2 class="eroorout-title"></h2>
+        </div>
+        <div class="loding disabled">
+            <h2 class="loding-title">
+                Загрузка данных, пожалуйста подождите
+            </h2>
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="out disabled">
+            <table class="out-table"></table>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="first">
+            <p>Создано с <span class="heart"><i class="fas"></i></span> от <a target="_blank"
+                    href="https://vk.com/xaromi">Xaromi</a></p>
+            <p><a target="_blank" href="https://vk.com/xaromi"><i class="fab"></i></a></p>
+        </div>
+        <div class="second">
+            <p>© 2019 Twitch-Helper - All rights reserved</p>
+            <p>Этот сайт не связан с Twitch.tv, ни с их партнерами.</p>
+        </div>
+    </div>
+    <script src="js/dev.js"></script>
+</body>
+
+</html>
